@@ -1,0 +1,71 @@
+.mainDishItem {
+    width: 280px;
+    height: 180px;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    margin-bottom: 5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    /* border-bottom: 4px solid rgb(225, 252, 223); */
+    transform: scale(1);
+    transition: all ease-in-out .3s;
+}
+.mainDishItem:hover{
+    transform: scale(1.08);
+}
+.mainDishItem svg {
+    font-size: 32px;
+    align-self: flex-end;
+    margin-right: .5rem;
+    cursor: pointer;
+}
+.mainDishItem p {
+    margin-left: .5rem;
+    font-weight: 800;
+}
+.mainDishItem > svg:nth-child(1){
+    color : red;
+}
+.mainDishItem > svg:nth-child(3){
+    color : orange;
+    font-size: 38px;
+}
+.dishImg {
+   height: 100%;
+   width:100%;
+   object-fit: contain;
+   
+}
+.imgBox{
+    position:absolute;
+    height:130px;
+    width: 130px;
+    border-radius: 50%;
+    top: -40%;
+    left:50%;
+    transform: translate(-50%,0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.rate .star{
+    font-size: 28px;
+    color: orange;
+    
+}
+svg:active{
+    background-color: rgb(255, 165, 0,.2);
+    color :white;
+    border-radius: 50%;
+}
+@media only screen and (min-width: 1000px) {
+    .mainDishItem{
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+}

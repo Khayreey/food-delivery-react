@@ -1,0 +1,34 @@
+.dishesContainer {
+    margin-left: 5rem ;
+    margin-right: 5rem ;
+    margin-top: 4rem;
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.notFound {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.notFound > p {
+    font-size:22px;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+}
+.notFound > p span {
+    color:orange;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+
+
+
+

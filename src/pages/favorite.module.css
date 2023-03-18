@@ -1,0 +1,32 @@
+.favoriteContainer {   
+    margin-left: 5rem ;
+    margin-right: 5rem ;
+    margin-top: 4rem;
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.favorite {
+    margin: .5rem 1rem 1rem 0rem;
+}
+.favorite > p {
+    margin-left: 5rem;
+}
+.favorite > p > span {
+    color:orange ;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: xx-large;
+}
+.notFound{
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .favorite > p {
+        margin-left: .5rem;
+    }
+}

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Sofia&display=swap');
+.mainContainer{
+    position: relative;
+    width: 100%;
+    height: 160px;
+    background: rgb(255, 165,0); 
+    border-radius : 50px;
+    margin-top: 4.1rem;
+}
+.above {
+    height: 50%;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center; 
+    background: linear-gradient(#fff ,  rgb(225, 252, 223));
+    z-index: -5;
+    border-bottom: 1px solid white ;
+}
+.above  p {
+   letter-spacing: 6px;
+    font-size: 32px;
+    font-family: Alkalami;
+    font-weight:900;
+    
+}
+.above  span {
+    position: relative;
+    color: orange;
+    font-size: 42px;
+    letter-spacing: 8px;
+    font-family: sofia;
+    font-weight:900;
+}
+.above  span::after {
+    content: " ";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    background: linear-gradient(135deg, rgba(255, 166, 0, 0.1), rgba(255, 166, 0, 0));
+    border-radius: 5px;
+    border:1px solid rgba(255, 166, 0, 0.18);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transform:translateY(45deg);
+}
+
+.mainContainer img:nth-child(1) {
+        position: absolute;
+        top: 5px;
+        left: 20px;
+        height:155px;
+        filter: drop-shadow(0px 3px 2px rgb(255,255,255));
+       
+}
+.mainContainer img:nth-child(2) {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    height:155px;
+    filter: drop-shadow(0px 3px 2px rgb(255,255,255));
+}
+
+@media only screen and (max-width: 600px) {
+    .mainContainer img{
+        height:250px;
+ }
+ .above p{
+    visibility: hidden;
+ }
+
+}

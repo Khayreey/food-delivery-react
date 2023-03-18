@@ -1,0 +1,80 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-bottom:2px solid #7be495;
+    margin-top: .5rem;
+    width:100%;
+    animation: bump 300ms;
+}
+.list > p {
+    align-self: center;
+    font-size :1.5rem ;
+    font-weight : 900
+}
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main img {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    border-radius: 50%;
+    box-shadow: 0 3px 20px  rgba(0,0,0,.1);
+    padding: .3rem;
+}
+.main > p {
+    color :orange;
+    font-weight:800
+}
+.actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.actions > p {
+    font-weight: 700;
+    font-size : 1.3rem;
+    
+}
+.actions p:last-child {
+    font-weight: 800;
+    font-size : 1.4rem;
+}
+.circle {
+    display: flex;
+    align-items: center;
+}
+.circle > p {
+    border:3px solid rgb(225, 252, 223);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    
+}
+.circle svg {
+    cursor: pointer;
+    color : orange;
+    font-size: 28px;
+    margin: .5rem;
+}
+svg:active{
+    background-color: rgb(255, 165, 0,.2);
+    color :white;
+    border-radius: 50%;
+}
+@keyframes bump {
+    from{
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}

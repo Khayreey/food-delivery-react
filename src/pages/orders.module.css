@@ -1,0 +1,63 @@
+.orders  {
+    margin: 0rem 5rem;
+}
+.orders > p > span {
+    color:orange ;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: xx-large;
+}
+th p {
+    font-weight: bold;
+    font-size: 1em;
+    text-align: left;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.container td {
+    font-size: .9em;
+}
+.container {
+    text-align: left;
+    overflow: hidden;
+    width: 100%;
+    margin: 1rem auto;
+    display: table;
+    padding: 0 0 8em 0; 
+    border-radius: 20px;
+    border-collapse: collapse;
+}
+.container td {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left:1%;  
+}
+.container th {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left:1%; 
+}
+
+.container tr:nth-child(odd) {
+    
+    background-color: rgb(243, 243, 243);
+}
+.container tr:nth-child(even) {
+    background-color: white;
+}
+
+.container th {
+    background-color:rgb(172, 253, 166) ;
+}
+.container tr {
+    border-bottom : 1px solid white;
+}
+
+  .container tr:hover:not(thead tr) {
+    border-bottom : 1px solid orange ;
+    cursor: pointer;
+}
+  @media (max-width: 800px) {
+    .container td:nth-child(1),
+    .container th:nth-child(1) { display: none; }
+    }

@@ -1,0 +1,232 @@
+.main {
+    position: relative;
+    margin-top: .5rem;
+    width: 80%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    background-color: rgba(0,0,0,.78);
+    border-radius: 10px;
+    padding: .1rem .5rem;
+    box-shadow: 0px 2px 5px -1px rgba(0,0,0,.2);
+    justify-content: space-between;
+}
+.main > p{
+    color: white;
+    width:max-content;
+    padding: 0rem .5rem 0rem 0rem;
+    margin-bottom: .5rem;
+    font-size: 28px;
+    font-weight: 800;
+    border-bottom: 3.5px solid orange;
+}
+.main span {
+    color:white !important
+}
+.form {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.inputBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inputBox > p {
+    color: white;
+    font-weight: 600;
+    font-size: .78rem;
+    border-bottom: 1px solid white;
+    padding: 0 .2rem;
+    background-color: rgba(0,0,0,.07);
+    text-transform: uppercase;
+}
+.inpuField {
+    position: relative;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: 0px;
+    background-color: rgba(255,165,0,.03);
+    padding: 0rem .2rem;
+    border-radius: 5px;
+    transition: all ease-in-out .5s;
+}
+.error {
+    background-color: rgb(255, 0, 0 , .3);
+}
+.inpuField svg {
+    color: white;
+    background-color: rgb(255, 165, 0 , .2);
+    border-radius: 50%;
+    padding: 3px;
+}
+.inpuField svg:nth-child(1){
+    cursor: pointer;
+}
+input {
+    width: 100%;
+    border: none;
+    color: rgb(224, 224, 224);
+    font-size: 16px;
+    background-color: unset;
+    outline: none;
+    padding: .4rem ;
+    border-bottom: 1.5px solid rgb(129, 221, 122,.1);
+    transition: all ease-out .2s;
+}
+   
+
+input:-webkit-autofill { 
+    -webkit-background-clip: text;
+}
+
+input:focus {
+    border-bottom: 2px solid orange;
+}
+input:focus + svg{
+    background-color: rgb(255, 165, 0 , .8);
+}
+.error input {
+    border-bottom: 2px solid red;   
+}
+.error svg {
+    background-color:red;
+}
+.actions {
+    width: 100%;
+    display: flex;
+}
+.formAndActions{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+button{
+    font-size: .9rem;
+    text-transform: uppercase;
+    line-height: 1.75;
+    cursor: pointer;
+    min-width: 64px;
+    font-weight: 500;
+    color: #1976d2;
+    outline: none;
+    border: none;
+    background-color: unset;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;;
+}
+
+.registerBtn{
+    padding: 0px 3px;
+    color: white;
+    background-color: rgb(129, 221, 122,.9);
+    min-width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+.registerBtn:disabled{
+    background-color: rgb(129, 221, 122,.2);
+    color: gray;
+    cursor: auto;
+}
+button:disabled ,button[disabled]{
+    color: gray;
+}
+.imgLabel {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 50%;
+    margin: 0px auto;
+    background-color: rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+.imgLabel > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.imgLabel  input {
+    display: none;
+}
+.imgLabel > svg {
+    position: absolute;
+    bottom: -5px;
+    right: -10px;
+    color: rgb(209, 207, 207);
+    font-size: 40px;
+}
+.notValidText{
+    color: rgb(211, 208, 208);
+    background-color: rgb(255, 0, 0 , .3);
+    border-radius: 5px;
+    text-transform:uppercase;
+    text-align: center;
+    margin-top: .2rem;
+}
+.discover {
+    position: relative;
+}
+.discover svg {
+    position: absolute;
+    color: orange;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 28px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,.2);
+    animation: rightLeft 1s alternate-reverse infinite;
+}
+select {
+    position: absolute;
+    color: white;
+    background-color: rgb(255, 165, 0 , .7);
+    border: none;
+    border-radius: 15px 15px 0px 0px;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+}
+option::selection{
+    color:white
+}
+@keyframes rightLeft {
+    from {
+        left: -50px;
+    }
+    to {
+         left:-20px
+    }
+}
+@media only screen and (min-width:900px) {
+    .main{
+       width: 45%;
+    }
+}
+@media only screen and (max-width:900px) {
+    .main{
+       width: 70%;
+    }
+}
+@media only screen and (max-width:700px) {
+    .main{
+        width: 90%;
+        height: 90%;
+    }
+    .inpuField{
+        width: 65%;
+    }
+}

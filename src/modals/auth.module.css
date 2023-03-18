@@ -1,0 +1,45 @@
+.actions {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.actions button {
+    font-size: .9rem;
+    line-height: 1.76;
+    padding: .7rem 0rem;
+    width: 100%;
+    cursor: pointer;
+    transition: all ease-in-out .5s;
+}
+.actions button:hover {
+    background-color: rgba(255, 165, 0);
+    color: white;
+}
+.actions button:hover a {
+    color: white;
+}
+.actions button:nth-child(2){
+    color: rgb(65, 64, 64);
+    border-radius:0px 0px 10px 10px;
+}
+.actions  button:nth-child(1) {
+    border-top: 1px solid rgb(185, 184, 184);
+    border-bottom: 1px solid rgb(185, 184, 184); 
+}
+.actions a {
+    width:100% ;
+    color:orange ;
+    margin: 1rem;
+    transition: all ease-in-out .5s;
+}
+.logoImg{
+    margin-top: 1rem;
+    min-width: 40px;
+    width :20%;
+    padding-top: .2rem;
+}
+

@@ -1,0 +1,22 @@
+.status{
+    display:flex ; 
+    align-items : center ;
+}
+.status > p {
+    color :gray
+}
+.status > svg {
+    padding-right: 3px;
+}
+.pending > svg{
+    color: gray;
+}
+.done > svg {
+    color :#4BB543 
+}
+.cancel > svg{
+    color: red
+}
+.onWay > svg {
+    color : rgb(10,100,188)
+}
